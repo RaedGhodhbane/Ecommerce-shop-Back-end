@@ -29,6 +29,7 @@ public class Notification {
 
     private LocalDate datePosted;
 
+    @Column(name = "user_id")
     private String userId;
 
     private String message;

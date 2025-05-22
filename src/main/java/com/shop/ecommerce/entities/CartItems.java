@@ -22,7 +22,7 @@ public class CartItems {
     private String productName;
 
     @Column(name = "product_id")
-    private String productId;
+    private Long productId;
 
     @Column(name = "product_img")
     private String productImg;
@@ -38,7 +38,7 @@ public class CartItems {
     @JoinColumn(name = "cart_id")
     private Cart cart;
 
-    public CartItems(Long id, String productName, String productId, String productImg, int productQuantity, int productPrice) {
+    public CartItems(Long id, String productName, Long productId, String productImg, int productQuantity, int productPrice) {
         this.id =id;
         this.productName = productName;
         this.productId = productId;
