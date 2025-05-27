@@ -8,5 +8,5 @@ import lombok.Data;
 public class WishListDto {
     private Long userId;
 
-    private Long ProductId;
+    private Long productId;
 }

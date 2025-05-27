@@ -1,11 +1,12 @@
 package com.shop.ecommerce.dto.response;
 
-public record DtoCart() {
-    static Long id;
-    static String productName;
-    static String productId;
+public record DtoCart(
+        Long id,
+        String productName,
+        String productId,
+        String productImg,
+        int productQuantity,
+        int productPrice
+) {
 
-    static String productImg;
-    static int productQuantity;
-    static int productPrice;
 }

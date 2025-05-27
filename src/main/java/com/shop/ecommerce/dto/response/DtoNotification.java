@@ -5,9 +5,11 @@ import lombok.Builder;
 import java.time.LocalDate;
 
 @Builder
-public record DtoNotification() {
-    static String userId;
-    static String message;
-    static boolean status;
-    static LocalDate datePosted;
+public record DtoNotification(
+        String userId,
+        String message,
+        boolean status,
+        LocalDate datePosted
+) {
+
 }
